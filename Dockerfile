@@ -5,6 +5,7 @@ ADD ./zaark.repo /etc/yum.repos.d/zaark.repo
 RUN yum install -y \
   autoconf \
   gcc \
+  gcc-c++ \
   m4 \
   mercurial \
   openssl-devel \
