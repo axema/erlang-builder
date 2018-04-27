@@ -1,0 +1,5 @@
+[Zaark]
+name=zaark
+description=Zaark YUM repo
+baseurl= http://repo.zaark.net/zaark/testing
+gpgcheck=0
