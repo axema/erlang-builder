@@ -2,7 +2,7 @@ FROM centos:7
 
 ADD ./zaark.repo /etc/yum.repos.d/zaark.repo
 
-RUN yum install -y \
+RUN yum makecache && yum install -y \
   autoconf \
   gcc \
   gcc-c++ \
@@ -17,7 +17,6 @@ RUN yum install -y \
   make \
   git \
   erlang \
-  ssh \
   which
 
 RUN mkdir /build
