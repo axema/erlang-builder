@@ -17,6 +17,7 @@ RUN yum install -y \
   make \
   git \
   erlang \
-  ssh
+  ssh \
+  which
 
 RUN mkdir /build
