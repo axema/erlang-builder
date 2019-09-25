@@ -21,4 +21,6 @@ RUN yum makecache && yum install -y \
 
 RUN wget https://s3.amazonaws.com/rebar3/rebar3 && mv rebar3 /usr/bin && chmod +x /usr/bin/rebar3
 
+ENV PATH="/usr/bin:${PATH}"
+
 RUN mkdir /build
