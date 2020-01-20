@@ -16,7 +16,7 @@ RUN yum makecache && yum install -y \
   zlib-devel \
   make \
   git \
-  erlang \
+  erlang-20.3.4-1 \
   which
 
 RUN wget https://s3.amazonaws.com/rebar3/rebar3 && mv rebar3 /usr/bin && chmod +x /usr/bin/rebar3
