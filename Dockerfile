@@ -1,7 +1,5 @@
 FROM centos:7
 
-ADD ./zaark.repo /etc/yum.repos.d/zaark.repo
-
 RUN yum makecache && yum install -y \
   autoconf \
   gcc \
@@ -10,14 +8,16 @@ RUN yum makecache && yum install -y \
   mercurial \
   openssl-devel \
   ncurses-devel \
-  rpm-build \
   tar \
   wget \
   zlib-devel \
   make \
   git \
-  erlang-20.3.4 \
-  which
+  which \
+  rpm-build
+
+RUN wget -O otp.rpm https://github.com/rabbitmq/erlang-rpm/releases/download/v23.1.1/erlang-23.1.1-1.el7.x86_64.rpm && \
+    rpm -ivh otp.rpm
 
 RUN wget https://s3.amazonaws.com/rebar3/rebar3 && mv rebar3 /usr/bin && chmod +x /usr/bin/rebar3
 

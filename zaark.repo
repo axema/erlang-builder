@@ -1,6 +1,0 @@
-[zaark]
-name=Zaark stable
-description=Zaark Stable YUM repo
-baseurl=http://repo.zaark.net/zaark/stable
-gpgcheck=0
-priority=10
