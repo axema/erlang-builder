@@ -1,5 +1,5 @@
 
 ## Build docker image
-docker build -t gitlab-cr.zaark.net/docker/erlang-builder .
+docker build -t ghcr.io/axema/erlang-builder .
 ## push to repo
-docker push gitlab-cr.zaark.net/docker/erlang-builder
+docker push ghcr.io/axema/erlang-builder
